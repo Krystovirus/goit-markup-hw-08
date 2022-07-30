@@ -1,0 +1,8 @@
+body {font-family: var(--font-family-primary);
+    color: var(--primary-text-color);}
+
+ul, ol {margin: 0; padding: 0;}
+a {display: inline-block; text-decoration: none;}
+img { max-width: 100%; height: auto; object-fit: cover; }
+button {cursor: pointer; font-family: inherit;}
+li {list-style-type : none;}

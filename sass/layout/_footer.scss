@@ -1,0 +1,96 @@
+.footer {background-color: var(--main-bg-color); padding: var(--uncommon-padding) 0;
+
+&__container {display: flex; 
+    align-items: baseline;}
+
+&__info-box {margin-right: 4.375rem;
+    max-width: 14.4375rem;}
+
+&__address {display: flex; flex-direction: column;
+
+&-place {padding-top: var(--rare-margin);
+    font-style: normal;
+    font-size: var(--pimary-size);
+    font-weight: 400;
+    line-height: 1.5rem;
+    letter-spacing: 0.03em;
+    color: var(--primary-color);}
+
+&-contacts {padding-top: var(--footer-contacts);
+    font-style: normal;
+    font-weight: 400;
+    font-size: var(--pimary-size);
+    line-height: 1.5rem;
+    letter-spacing: 0.03em;
+    color: var(--footer-contacts-color);
+    padding-top: 0.5629;}
+}
+&__title {margin-top: 0; margin-bottom: 1.25rem;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 0.875rem;
+    line-height: 1rem;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--primary-color);}
+&__socials {
+&-list {display: flex; flex-direction: row;}
+&-item {
+&:not(:last-child) {margin-right: var(--margin-social);}
+}
+&-link {
+&-icon { fill: var(--footer-vector); 
+&:hover {fill: var(--color-logo);}}
+&:focus &-icon {fill: var(--color-logo);}
+
+& , &-icon { transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);}
+}
+&-item , &-link-icon {width: 2.75rem; height: 2.75rem;}
+}
+
+&__form {display: flex; flex-direction: row; justify-content: center; align-items: flex-end;}
+
+&__form-field-box {display: flex; flex-direction: column; justify-content: center; align-items: flex-start; margin-left: 5.8125rem; margin-right: 0.75rem;}
+
+&__field-input {
+    padding-left: var(--secondary-size);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    background: var(--main-bg-color);
+    width: 22.375rem;
+    height: 3.125rem;
+    left: 50.9375rem;
+    top: 174.1875rem;
+    border: 0.0625rem solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0rem 0.25rem 0.25rem rgba(0, 0, 0, 0.15));
+    border-radius: 0.25rem;
+
+&::placeholder {font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);}
+}
+&__suscribe-button {font-weight: 700;
+    letter-spacing: 0.06em;
+    padding: 0.8125rem 3.75rem 0.8125rem 1.6875rem;
+    position: relative;
+    box-shadow: 0rem 0.25rem 0.25rem rgba(0, 0, 0, 0.15);
+
+&:hover,
+&:focus {background: var(--button-hover);}
+
+&-icon {fill: var(--primary-color); 
+    width: 1.5rem; 
+    position: absolute; 
+    top: -3.25rem;
+    right: 1.75rem;}
+}
+}

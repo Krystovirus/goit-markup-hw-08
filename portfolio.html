@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/1.1.0/normalize.min.css">
+    <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="stylesheet" href="./css/main.min.css.map">
+    <title>Портфолио</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container header__container">
+            <a href="./" class="logo">
+                <span class="logo--colored">Web</span>Studio
+            </a>
+            <nav class="navigation">
+                <ul class="navigation__pages">
+                    <li class="navigation__pages-list"><a href="./index.html" class="navigation__link">Студия</a></li>
+                
+                    <li class="navigation__pages-list"><a href="./portfolio.html" class="navigation__link--currentactive navigation__link">Портфолио</a></li>
+
+                    <li class="navigation__pages-list"><a href="#" class="navigation__link">Контакты</a></li>
+                </ul> 
+            </nav>
+            <div class="header__contacts-box">
+                <a href="mailto:info@devstudio.com" class="header__contacts">
+                    <svg class="header__contacts-icon--mail header__contacts-icon">
+                        <use href="./images/icons.svg#icon-email">
+                    </svg>info@devstudio.com</a>
+                <a href="tel:+380961111111" class="header__contacts">
+                    <svg class="header__contacts-icon--smartphone header__contacts-icon">
+                        <use href="./images/icons.svg#icon-smartphone">
+                    </svg>+38 096 111 11 11</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="section catalogue">
+            <div class="container">
+                <h2 hidden>Навинация страницы портфолио</h2>
+                <ul class="filters">
+                    <li class="filters__item"><button type="button" class="button filters__button">Все</button></li>
+                    <li class="filters__item"><button type="button" class="button filters__button">Веб-сайты</button></li>
+                    <li class="filters__item"><button type="button" class="button filters__button">Приложения</button></li>
+                    <li class="filters__item"><button type="button" class="button filters__button">Дизайн</button></li>
+                    <li class="filters__item"><button type="button" class="button filters__button">Маркетинг</button></li>
+                </ul>
+            
+                <h2 hidden>Наши проекты</h2>
+                
+                <ul class="catalogue__list">
+                    <li class="catalogue__item web">
+                        <div class="catalogue__project-content"><img class="catalogue__project-image" src="./images/portfolio/technocrack.jpg" alt="Лого веб-сайта" />
+                        <div class="catalogue__project-overlay"><p class="catalogue__project-text">
+                            Ресурс предлагает комплексные предложения с разным уровнем
+                            функционала и сервисов. Все это позволит посетителю получить
+                            исчерпывающие сведения о компании или частном лице.
+                          </p></div></div>
+                        <div class="catalogue__project"><h3 class="catalogue__project-name">Технокряк</h3> <span class="catalogue__project-type">Веб-сайт</span></div>
+                    </li>
+
+                    <li class="catalogue__item design">
+                        <div class="catalogue__project-content"><img class="catalogue__project-image" src="./images/portfolio/poster.jpg" alt="Лого дизайна" />
+                            <div class="catalogue__project-overlay"><p class="catalogue__project-text">
+                            Ресурс предлагает комплексные предложения с разным уровнем
+                            функционала и сервисов. Все это позволит посетителю получить
+                            исчерпывающие сведения о компании или частном лице.
+                          </p></div></div>
+                        <div class="catalogue__project"><h3 class="catalogue__project-name">Постер New Orlean vs Golden Star</h3> <span class="catalogue__project-type">Дизайн</span></div>
+                    </li>
+
+                    <li class="catalogue__item app">
+                        <div class="catalogue__project-content"><img class="catalogue__project-image" src="./images/portfolio/seafood.jpg" alt="Лого приложения" />
+                            <div class="catalogue__project-overlay"><p class="catalogue__project-text">
+                            Ресурс предлагает комплексные предложения с разным уровнем
+                            функционала и сервисов. Все это позволит посетителю получить
+                            исчерпывающие сведения о компании или частном лице.
+                          </p></div></div>
+                        <div class="catalogue__project"><h3 class="catalogue__project-name">Ресторан Seafood</h3> <span class="catalogue__project-type">Приложение</span></div>
+                    </li>
+
+                    <li class="catalogue__item marketing">
+                        <div class="catalogue__project-content"><img class="catalogue__project-image" src="./images/portfolio/prime.jpg" alt="Лого маркетинг" />
+                            <div class="catalogue__project-overlay"><p class="catalogue__project-text">
+                            Ресурс предлагает комплексные предложения с разным уровнем
+                            функционала и сервисов. Все это позволит посетителю получить
+                            исчерпывающие сведения о компании или частном лице.
+                          </p></div></div>
+                        <div class="catalogue__project"><h3 class="catalogue__project-name">Проект Prime</h3> <span class="catalogue__project-type">Маркетинг</span></div>
+                    </li>
+                    <li class="catalogue__item app">
+                        <div class="catalogue__project-content"><img class="catalogue__project-image" src="./images/portfolio/boxes.jpg" alt="Лого приложения" />
+                            <div class="catalogue__project-overlay"><p class="catalogue__project-text">
+                            Ресурс предлагает комплексные предложения с разным уровнем
+                            функционала и сервисов. Все это позволит посетителю получить
+                            исчерпывающие сведения о компании или частном лице.
+                          </p></div></div>
+                        <div class="catalogue__project"><h3 class="catalogue__project-name">Проект Boxes</h3> <span class="catalogue__project-type">Приложение</span></div>
+                    </li>
+
+                    <li class="catalogue__item web">
+                        <div class="catalogue__project-content"><img class="catalogue__project-image" src="./images/portfolio/noborders.jpg" alt="Лого веб-сайта" />
+                            <div class="catalogue__project-overlay"><p class="catalogue__project-text">
+                            Ресурс предлагает комплексные предложения с разным уровнем
+                            функционала и сервисов. Все это позволит посетителю получить
+                            исчерпывающие сведения о компании или частном лице.
+                          </p></div></div>
+                        <div class="catalogue__project"><h3 class="catalogue__project-name">Inspiration has no Borders</h3> <span class="catalogue__project-type">Веб-сайт</span></div>
+                    </li>
+
+                    <li class="catalogue__item design">
+                        <div class="catalogue__project-content"><img class="catalogue__project-image" src="./images/portfolio/limited.jpg" alt="Лого дизайна" />
+                            <div class="catalogue__project-overlay"><p class="catalogue__project-text">
+                            Ресурс предлагает комплексные предложения с разным уровнем
+                            функционала и сервисов. Все это позволит посетителю получить
+                            исчерпывающие сведения о компании или частном лице.
+                          </p></div></div>
+                        <div class="catalogue__project"><h3 class="catalogue__project-name">Издание Limited Edition</h3> <span class="catalogue__project-type">Дизайн</span></div>
+                    </li>
+
+                    <li class="catalogue__item marketing">
+                        <div class="catalogue__project-content"><img class="catalogue__project-image" src="./images/portfolio/lab.jpg" alt="Лого маркетинг" />
+                            <div class="catalogue__project-overlay"><p class="catalogue__project-text">
+                            Ресурс предлагает комплексные предложения с разным уровнем
+                            функционала и сервисов. Все это позволит посетителю получить
+                            исчерпывающие сведения о компании или частном лице.
+                          </p></div></div>
+                        <div class="catalogue__project"><h3 class="catalogue__project-name">Проект LAB</h3> <span class="catalogue__project-type">Маркетинг</span></div>
+                    </li>
+                    <li class="catalogue__item app">
+                        <div class="catalogue__project-content"><img class="catalogue__project-image" src="./images/portfolio/business.jpg" alt="Лого приложения" />
+                            <div class="catalogue__project-overlay"><p class="catalogue__project-text">
+                            Ресурс предлагает комплексные предложения с разным уровнем
+                            функционала и сервисов. Все это позволит посетителю получить
+                            исчерпывающие сведения о компании или частном лице.
+                          </p></div></div>
+                        <div class="catalogue__project"><h3 class="catalogue__project-name">Growing Business</h3> <span class="catalogue__project-type">Приложение</span></div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__container">
+            <div class="footer__info-box">
+                <a href="./" class="logo logo--light">
+                    <span class="logo--colored">Web</span>Studio
+                </a>
+                <address class="footer__address">
+                    <a href="https://goo.gl/maps/i6ab32QhwnGXRBHF8" class="footer__address-place">г. Киев, пр-т Леси Украинки, 26</a>
+                    <a href="mailto:info@devstudio.com" class="footer__address-contacts">info@devstudio.com</a>
+                    <a href="tel:+380961111111" class="footer__address-contacts">+38 096 111 11 11</a>
+                </address>
+            </div>
+            <div class="footer__socials">
+                <h3 class="footer__title">присоединяйтесь</h3>
+                <ul class="footer__socials-list">
+                    <li class="footer__socials-item"><a href="https://www.instagram.com/" class="footer__socials-link"><svg class="footer__socials-link-icon">
+                        <use href="./images/icons.svg#footer-instagram">
+                    </svg></a></li>
+                    <li class="footer__socials-item"><a href="https://twitter.com/" class="footer__socials-link"><svg class="footer__socials-link-icon">
+                        <use href="./images/icons.svg#footer-twitter">
+                    </svg></a></li>
+                    <li class="footer__socials-item"><a href="https://www.facebook.com/" class="footer__socials-link"><svg class="footer__socials-link-icon">
+                        <use href="./images/icons.svg#footer-facebook">
+                    </svg></a></li>
+                    <li class="footer__socials-item"><a href="https://www.linkedin.com/" class="footer__socials-link"><svg class="footer__socials-link-icon">
+                        <use href="./images/icons.svg#footer-linkedin">
+                    </svg></a></li>
+                </ul>
+            </div>
+            <div class="footer__form">
+                <div class="footer__form-field-box">
+                    <h2 class="footer__title">Подпишитесь на рассылку</h2>
+                    <label class="footer__form-field">
+                        <input type="email" name="email" class="footer__field-input" placeholder="E-mail" id="user-name">
+                    </label>
+                </div>
+                <div class="footer__btn">
+                    <button type="submit" class="button footer__suscribe-button" id="suscribe-btn">Подписаться<svg class="footer__suscribe-button-icon">
+                        <use href="./images/icons.svg#icon-send">
+                    </svg></button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/modal.js"></script>
+</body>
+</html>
