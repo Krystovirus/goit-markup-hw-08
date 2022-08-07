@@ -1,14 +1,48 @@
 .socials {
-&__list {display: flex; flex-direction: row; align-items: center; justify-content: center; margin-top: var(--secondary-size); gap: var(--margin-social);}
- 
-&__link {transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);}
-&__link:focus &__icon {fill: var(--primary-color);background: var(--color-logo); border-radius: 50%;}
-    
-&__icon { fill: var(--vector-color); border-radius: 50%; 
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &__list {
+        display: flex; 
+        flex-direction: row;
+        align-items: center; 
+        justify-content: center; 
+        margin-top: var(--secondary-size); 
+        gap: var(--margin-social); 
 
-&:hover,
-&:focus {background: var(--color-logo); fill: var(--primary-color);}
-}
-&__item , &__icon {width: 2.75rem; height: 2.75rem;}
+        &--words {
+            display: flex;
+            position: absolute;
+            bottom: 3rem;
+            flex-direction: row;
+            margin-bottom: 0;
+            padding-bottom: 3rem;
+            }
+    }
+    
+    &__link {
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        &--words {
+            font-weight: 500;
+            font-size: 1.125rem;
+            line-height: 1.375rem;
+            letter-spacing: 0.02em;
+            color: var(--color-logo);
+            display: flex;
+            flex-direction: row;
+           }
+     
+        &:focus &-icon {fill: var(--primary-color);
+            background: var(--color-logo); border-radius: 50%;}
+        
+        &-icon { fill: var(--vector-color); border-radius: 50%; 
+            transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+            &:hover,
+            &:focus {background: var(--color-logo); fill: var(--primary-color);}
+        }
+        &-item--words {
+            &:not(:first-child) {padding-left: 0.625rem;}
+            &:not(:last-child) {padding-right: 0.625rem; border-right: 0.0625rem solid rgba(33, 33, 33, 0.2);}
+        }
+        &-item , &-icon {width: 2.75rem; height: 2.75rem;}
+    }
 }

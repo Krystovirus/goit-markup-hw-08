@@ -4,7 +4,13 @@
     line-height: 1.9375rem;
     letter-spacing: 0.03em;
     color: var(--secondary-color);
-    margin-right: var(--common-padding);
-&--colored {color: var(--color-logo);}
-&--light {color: var(--primary-color);}
+
+    @include desktop-up {
+        &{
+            margin-right: var(--common-padding);
+        }
+    }
+    
+    &--colored {color: var(--color-logo);}
+    &--light {color: var(--primary-color);}
 }

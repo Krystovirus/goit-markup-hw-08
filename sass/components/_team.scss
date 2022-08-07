@@ -1,31 +1,64 @@
 .team {background-color: var(--filters-color);
 
-&__list {margin-block-start: 0;
-    margin-block-end: 0;
-    display: flex;}
+    &__list {margin-block-start: 0;
+        margin-block-end: 0;
+        display: flex;
 
-&__caption {text-align: center; padding-bottom: var(--uncommon-margin); padding-top: var(--uncommon-margin);}
+        flex-wrap: wrap;
+        justify-content: center;
+        }
 
-&__member {background-color: var(--primary-color);
-    box-shadow: 0rem 0.1875rem 0.0625rem rgba(0, 0, 0, 0.1), 0rem 0.0625rem 0.125rem rgba(0, 0, 0, 0.08), 0rem 0.125rem 0.125rem rgba(0, 0, 0, 0.12);
-    display: flex; flex-direction: column; 
-    max-width: 16.875rem;
-    border-radius: 0.25rem;
+    &__caption {text-align: center; 
+        padding-bottom: var(--uncommon-margin); 
+        padding-top: var(--uncommon-margin);}
 
-&:not(:last-child) {margin-right: var(--uncommon-margin);}
+    &__member {background-color: var(--primary-color);
+        box-shadow: 0rem 0.1875rem 0.0625rem rgba(0, 0, 0, 0.1), 
+        0rem 0.0625rem 0.125rem rgba(0, 0, 0, 0.08), 
+        0rem 0.125rem 0.125rem rgba(0, 0, 0, 0.12);
+        display: flex; 
+        flex-direction: column; 
+        width: 28.125rem;
+        border-radius: 0.25rem;
 
-&-name {font-weight: 500;
-    font-size: var(--secondary-size);
-    line-height: 1.1875rem;
-    text-align: center;
-    letter-spacing: 0.03em;
-    margin-top: 0;
-    margin-bottom: 0.625rem;}
+        @include up-to-tablet {
+        &:not(:last-child) {margin-bottom: 1.875rem;}
+        }
+        
+        @include tablet-up {
+            & {
+                width: 22.125rem;
+                margin: 0 1.875rem 1.875rem 0;
+            
+            }
 
-&-job {font-size: var(--secondary-size);
-    line-height: 1.1875rem;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: var(--secondary-text-color);}
-}
+            &:nth-child(n + 3) {margin-bottom: 0;}
+            &:nth-child(2n) {margin-right: 0;}
+        }
+
+        @include desktop-up {
+            & {
+               width: 16.875rem; 
+            }
+
+            &:nth-child(-n + 2) {margin-bottom: 0;}
+            &:not(:last-child) {margin-right: var(--uncommon-margin);}
+        }
+
+        
+
+        &-name {font-weight: 500;
+            font-size: var(--secondary-size);
+            line-height: 1.1875rem;
+            text-align: center;
+            letter-spacing: 0.03em;
+            margin-top: 0;
+            margin-bottom: 0.625rem;}
+
+        &-job {font-size: var(--secondary-size);
+            line-height: 1.1875rem;
+            text-align: center;
+            letter-spacing: 0.03em;
+            color: var(--secondary-text-color);}
+    }
 }

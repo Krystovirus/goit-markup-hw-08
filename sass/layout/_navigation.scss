@@ -1,24 +1,75 @@
-.navigation {display: flex; flex-direction: row; align-items: center; justify-content: center; 
-&__pages {display: flex; flex-direction: row; align-items: center; justify-content: center;
-&-list:not(:last-child) {margin-right: var(--common-margin);}
-}
-&__link {padding-top: var(--clickable-zone); padding-bottom: var(--clickable-zone);
-    font-weight: 500;
-    font-size: var(--pimary-size);
+.navigation {
+    @include up-to-tablet {
+        & {
+    padding-left: 2.5rem;
+    
+        }
+    }
+    @include tablet-up { 
+        & { 
+            display: flex; 
+            flex-direction: row; 
+            align-items: center; 
+            justify-content: center;
+
+            margin-left: 5.5rem;
+        }
+    }
+
+    @include desktop-up {
+        & {
+            margin-left: 0;
+        }
+    }
+
+    &__pages {
+        display: block;
+        
+        &-list{
+            &:hover .navigation__link,
+            &:active .navigation__link,
+            &:focus .navigation__link {color: var(--color-logo);}
+
+            &:not(:last-child) {padding-bottom: 2rem;}
+        }
+        @include tablet-up { 
+            & { 
+            display: flex;
+            flex-direction: row; 
+            align-items: center; 
+            justify-content: center;
+        }
+        &-list:not(:last-child) {margin-right: var(--common-margin);
+            padding-bottom: 0;}
+        }
+    }
+&__link { 
     color: var(--primary-text-color);
-    line-height: 1rem;
+    font-weight: 500;
+    font-size: 2.5rem;
+    line-height: 2.9375rem;
     letter-spacing: 0.02em;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-&:hover,
-&:focus {color: var(--color-logo);}
-&--currentactive {position: relative;
-&::after {content: ''; 
-    display: block; 
-    height: 0.25rem; width: 100%; 
-    background-color: var(--color-logo); 
-    position: absolute; 
-    bottom: 0;
-    border-radius: 0.25rem;}
-}
-}
+
+    @include tablet-up { & {padding-top: var(--clickable-zone); 
+        padding-bottom: var(--clickable-zone);
+        font-size: var(--pimary-size);
+        line-height: 1rem;
+        }
+    }
+    &:hover,
+    &:active,
+    &:focus {color: var(--color-logo);}
+
+    &--currentactive {position: relative;
+
+        &::after {content: ''; 
+            display: block; 
+            height: 0.25rem; width: 100%; 
+            background-color: var(--color-logo); 
+            position: absolute; 
+            bottom: 0;
+            border-radius: 0.25rem;}
+        }
+    }
 }

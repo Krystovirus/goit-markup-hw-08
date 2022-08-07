@@ -1,1 +1,11 @@
-.section {padding-top: var(--common-padding); padding-bottom: var(--common-padding);}
+.section {padding-top: 3.75rem; 
+    padding-bottom: 3.75rem;
+
+    @include desktop-up {
+        & {
+            padding-top: var(--common-padding); 
+            padding-bottom: var(--common-padding);
+        }
+    }
+
+}
