@@ -1850,6 +1850,9 @@ img {
   .clients__item {
     margin-bottom: 0;
   }
+  .clients__item:nth-child(3n) {
+    margin-right: 1.875rem;
+  }
   .clients__item:last-child {
     margin-right: 0;
   }
