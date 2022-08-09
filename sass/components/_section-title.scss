@@ -1,7 +1,16 @@
 .section-title {font-weight: 700;
-    font-size: var(--title-size);
-    line-height: 2.625rem;
+    font-size: 28px;
+    line-height: 33px;
     text-align: center;
     letter-spacing: 0.03em;
-    margin-bottom: var(--common-margin);
-    margin-top: 0;}
+    margin-bottom: 30px;
+    margin-top: 0;
+
+    @include desktop-up {
+        & {
+            font-size: var(--title-size);
+            line-height: 2.625rem;
+            margin-bottom: var(--common-margin);
+        }
+    } 
+}
